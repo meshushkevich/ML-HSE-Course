@@ -11,4 +11,16 @@ dependencies = [
     "plotly>=6.3.0",
     "tensorboard>=2.20.0",
     "torch>=2.8.0",
+    "microtorch",
+    "pandas>=2.3.2",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
 ]
+
+[tool.uv.workspace]
+members = [
+    "homework1/microtorch",
+]
+
+[tool.uv.sources]
+microtorch = { workspace = true }
